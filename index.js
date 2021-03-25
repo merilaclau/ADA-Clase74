@@ -21,7 +21,7 @@ const load = () => {
 //V2 - Corrección en clase
 
 const getUser = id => {
-  axios.get(`https://jsonplaceholder.typicode.com/users/${id}`)
+  axios.get(`https://jsonplaceholder.typicode.com/users/${id}`) // esto sólo funciona con comillas así. Con las otras NO!
   .then(res => {
     document.querySelector("#id").value = res.data.id;
     document.querySelector("#name").value = res.data.name;
